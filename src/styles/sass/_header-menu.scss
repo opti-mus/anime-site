@@ -1,0 +1,55 @@
+.header-menu {
+  display: flex;
+  list-style: none;
+  align-items: stretch;
+  height: 100%;
+  &__item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    &:hover {
+      background-color: $main-red;
+    }
+    &.more:hover .header-menu__hide-list {
+      display: block;
+      z-index: 999;
+    }
+    &.more::before {
+      content: '';
+      position: absolute;
+      display: block;
+      margin: auto;
+      height: 0;
+      width: 0;
+      left: 0;
+      right: 0;
+      bottom: -1px;
+      border-left: 0.5em solid transparent;
+      border-right: 0.5em solid transparent;
+      border-bottom: 0.5em solid $main-red;
+    }
+  }
+  &__hide-list {
+    position: absolute;
+    right: 0;
+    background: $main-black;
+    top: 100%;
+    display: none;
+  }
+  &__link {
+    color: $main-white;
+    padding: 1.7em 1.5em;
+    text-transform: uppercase;
+    font-weight: 300;
+    position: relative;
+    &.anime::after {
+      content: 'аниме';
+      position: absolute;
+      left: 50%;
+      bottom: 1em;
+      transform: translateX(-50%);
+      font-size: 0.8em;
+      text-transform: none;
+    }
+  }
+}

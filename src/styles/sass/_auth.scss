@@ -1,0 +1,16 @@
+.auth {
+  display: flex;
+  text-transform: uppercase;
+
+  &__item {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.8rem 1.3rem;
+  }
+  &__login {
+    background-color: $bg-second;
+  }
+  &__reg {
+    background-color: $main-green;
+  }
+}

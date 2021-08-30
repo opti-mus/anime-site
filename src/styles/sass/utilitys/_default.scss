@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: $bg-main;
+  color: $main-black;
+}
+html {
+  font-size: 14px;
+}
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  @media screen and (max-width: $laptop-bp) {
+    width: 98%;
+  }
+  @media screen and (max-width: $lg-mobile-bp) {
+    width: 100%;
+  }
+}
+a {
+  text-decoration: none;
+  color: $main-black;
+  outline: none;
+}

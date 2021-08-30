@@ -1,0 +1,20 @@
+.content {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    &.pos {
+      margin-top: 11rem;
+    }
+  }
+  &__anime {
+    flex: 2;
+    margin-right: 1rem;
+    @media screen and(max-width: $hide-nav-menu) {
+      margin-right: 0;
+    }
+  }
+  &__filter {
+    flex: 0.6;
+  }
+}

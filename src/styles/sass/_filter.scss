@@ -1,0 +1,76 @@
+.filter {
+  @media screen and (max-width: $laptop-bp) {
+    max-width: 19em;
+    flex: auto;
+  }
+  @media screen and (max-width: $lg-mobile-bp) {
+    top: 0;
+  }
+  @media screen and (max-width: $hide-nav-menu) {
+    position: fixed;
+    bottom: 0;
+    right: -300px;
+    transition: right 0.3s;
+    border: 1px solid $border-second;
+    &.show-filter {
+      right: 0;
+      @media screen and (max-width: $lg-mobile-bp) {
+        max-width: 100vw;
+        top: 0;
+      }
+    }
+  }
+
+  &__container {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: $main-white;
+    @media screen and(max-width:$lg-mobile-bp) {
+      height: 100%;
+      overflow-y: auto;
+    }
+  }
+  &__close {
+    position: absolute;
+    right: 1.6rem;
+    font-size: 2em;
+    top: 0.5rem;
+    display: none;
+    @media screen and (max-width: $lg-mobile-bp) {
+      display: block;
+    }
+  }
+  &__name {
+    margin-top: 0.6em;
+    margin-bottom: 0.3em;
+    display: block;
+  }
+  &__year {
+    display: inline-flex;
+    width: 49%;
+    border: 1px solid $border-second;
+    padding: 0.6em;
+    color: $main-border;
+    transition: border-color 0.3s;
+    outline: none;
+    &:hover {
+      border-color: $border-hover;
+    }
+  }
+  &__submit {
+    background-color: #3cce7b;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    padding: inherit;
+    margin-top: 2em;
+    /* font-weight: 600; */
+    font-size: 1.2em;
+    cursor: pointer;
+    @media screen and(max-width: $lg-mobile-bp) {
+      position: sticky;
+      bottom: 1.7em;
+    }
+  }
+}

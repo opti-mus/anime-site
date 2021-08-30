@@ -1,0 +1,75 @@
+.header {
+  height: 10rem;
+  background-image: url('/src/img/top3.jpg');
+  background-position: top center;
+  &__container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    justify-content: space-between;
+  }
+  &__auth {
+    position: absolute;
+    right: 0;
+    top: 1.8rem;
+  }
+  &__nav {
+    height: 5em;
+    background-color: $main-black;
+    border-top: solid $main-red;
+    border-bottom: solid $main-red;
+    position: relative;
+    transition: opacity 0.3s, top 0.3s;
+    @media screen and (max-width: $laptop-bp) {
+      font-size: 0.7em;
+    }
+    @media screen and (max-width: $hide-nav-menu) {
+      display: none;
+    }
+    &.fixed-show {
+      z-index: 9999;
+      position: fixed;
+      top: -4.3em;
+      width: 100%;
+      opacity: 0.9;
+      height: 4.3em;
+      font-size: 0.8em;
+      border-top: none;
+      border-bottom: 0.2em solid $main-red;
+      @media screen and (max-width: $laptop-bp) {
+        display: none;
+      }
+      &.anim-navbar {
+        top: 0;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  &__logo {
+    background: url('/src/img/yummy-slogan.svg') no-repeat;
+    height: 5.3em;
+    width: 16rem;
+    display: block;
+  }
+
+  &__search {
+    margin-top: 1rem;
+  }
+  &__filter {
+    background-color: $main-green;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    padding: 1em;
+    color: $main-white;
+    margin-top: 1em;
+    display: none;
+    @media screen and (max-width: $hide-nav-menu) {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,93 @@
+:root {
+  --main-black: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.my-slider {
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+}
+
+.my-slider__visible {
+  display: flex;
+  transition: transform 0.3s;
+}
+
+.my-slider:hover > .my-slider__arrows {
+  opacity: 0.8;
+}
+
+.my-slider__item {
+  width: 185px;
+  flex-shrink: 0;
+  position: relative;
+  border-right: 0.1em solid $border-second;
+}
+
+.my-slider__img {
+  width: 100%;
+  height: auto;
+}
+
+.my-slider__arrow-right,
+.my-slider__arrow-left {
+  background-color: var(--main-black);
+  padding: 0.8em;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.my-slider__arrows {
+  font-weight: 600;
+  font-size: 1.1em;
+  opacity: 0;
+  transition: opacity 0.3s;
+  color: aliceblue;
+  @media screen and (max-width: $laptop-bp) {
+    opacity: 1;
+  }
+}
+
+.my-slider__arrow-right > i {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.my-slider__arrow-left {
+  > i {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+
+  left: 0;
+}
+
+.my-slider__arrow-right {
+  right: 0;
+}
+.my-slider__label {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  padding: 0.8em;
+  width: 100%;
+  min-height: 5em;
+  opacity: 0.8;
+}
+.arrow {
+  border: solid #fff;
+  border-width: 0 0.1em 0.1em 0;
+  display: inline-block;
+  padding: 0.3em;
+}

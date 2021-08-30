@@ -1,0 +1,51 @@
+.basic-item {
+  display: flex;
+  border-bottom: 0.1rem solid $border-second;
+  background-color: $bg-second;
+  &:nth-child(2n-1) {
+    background-color: #fff;
+  }
+  &__link {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border-left: 0.3rem solid transparent;
+    transition: all 0.1s;
+    &:hover {
+      border-left: 0.3rem solid $main-green;
+    }
+    @media screen and (max-width: $lg-mobile-bp) {
+      font-size: 0.8em;
+    }
+  }
+  &__date {
+    padding: 1.3rem 0.4rem;
+    border-right: 0.1rem solid $border-second;
+  }
+  &__image {
+    height: 4rem;
+    width: auto;
+    @media screen and (max-width: $lg-mobile-bp) {
+      display: none;
+    }
+  }
+  &__desc {
+    margin-left: 0.5rem;
+    flex: 1;
+  }
+  &__title {
+    font-weight: bold;
+    float: left;
+  }
+  &__separ {
+    float: left;
+    margin: 0 0.4rem;
+  }
+  &__genres {
+    // display: inline-flex;
+    list-style: none;
+    & > li {
+      display: inline-flex;
+    }
+  }
+}

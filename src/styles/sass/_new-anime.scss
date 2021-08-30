@@ -1,0 +1,87 @@
+.new-anime {
+  &__main-title {
+    text-align: left;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__label {
+    background-color: $main-red;
+    padding-top: inherit;
+    padding-bottom: inherit;
+    padding-left: 2rem;
+    padding-right: 2.5rem;
+    color: $main-white;
+    border-bottom: 0.1em solid #ff6666;
+    @media screen and (max-width: $lg-mobile-bp) {
+      padding: 1em 0;
+      display: block;
+      text-align: center;
+    }
+  }
+  &__item {
+    display: flex;
+    margin-bottom: 1rem;
+    background: $main-white;
+    width: 49%;
+    @media screen and (max-width: $laptop-bp) {
+      width: 100%;
+      font-size: 0.9em;
+      display: block;
+    }
+    @media screen and (max-width: $lg-mobile-bp) {
+      font-size: 0.8em;
+    }
+  }
+  &__info {
+    list-style: none;
+    & > li {
+      margin-bottom: 1rem;
+    }
+  }
+  &__desc {
+    width: inherit;
+    padding: 0.6rem;
+    // flex: 1;
+  }
+  &__img {
+    width: 13em;
+    max-width: 100%;
+    height: auto;
+    float: left;
+    margin-right: 0.5em;
+  }
+  &__title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    font-weight: 600;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: $main-black;
+    transition: color 0.4s ease;
+    &:hover {
+      color: $main-red;
+    }
+  }
+  &__genre-title {
+    float: left;
+    margin-right: 0.3rem;
+  }
+  &__genres {
+    list-style: none;
+    & > li {
+      display: inline-flex;
+    }
+    & a {
+      color: $main-red;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

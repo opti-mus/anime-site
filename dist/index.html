@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/main.c52e0fe2.css">
+    <title>Anime site</title>
+  <script src="/main.c52e0fe2.js"></script></head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__auth auth">
+          <a href="#" class="auth__login auth__item">Вход</a>
+          <a href="#" class="auth__reg auth__item">Регистрация</a>
+        </div>
+      </div>
+      <div class="header__nav">
+        <div class="container header__container">
+          <a href="/" class="header__logo"></a>
+          <ul class="header__menu header-menu">
+            <li class="header-menu__item">
+              <a href="/" class="header-menu__link">Главная</a>
+            </li>
+            <li class="header-menu__item more">
+              <a href="#" class="header-menu__link anime">Каталог</a>
+              <ul class="header-menu__hide-list hide-list">
+                <li class="hide-list__item">
+                  <a href="#" class="hide-list__link">Всё аниме</a>
+                </li>
+                <li class="hide-list__item">
+                  <a href="#" class="hide-list__link">Расписание онгоингов</a>
+                </li>
+                <li class="hide-list__item">
+                  <a href="#" class="hide-list__link">Онгоинги</a>
+                </li>
+                <li class="hide-list__item">
+                  <a href="#" class="hide-list__link">Анонсы</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link anime">Топ-100</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link anime">Случайное</a>
+            </li>
+            <li class="header-menu__item more">
+              <a href="#" class="header-menu__link">Сообщество</a>
+              <ul class="header-menu__hide-list hide-list">
+                <li class="hide-list__item">
+                  <a href="#" class="hide-list__link">Рецензии</a>
+                </li>
+                <li class="hide-list__item">
+                  <a href="#" class="hide-list__link">Пользователи</a>
+                </li>
+                <li class="hide-list__item">
+                  <a href="#" class="hide-list__link">Чат</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header-menu__item more">
+              <a href="#" class="header-menu__link">Помощь</a>
+              <ul class="header-menu__hide-list hide-list">
+                <li class="hide-list__item">
+                  <a href="#" class="hide-list__link">FAQ</a>
+                </li>
+                <li class="hide-list__item">
+                  <a href="#" class="hide-list__link">Правила сайта</a>
+                </li>
+                <li class="hide-list__item">
+                  <a href="#" class="hide-list__link">Информация для правообладателей из РФ</a>
+                </li>
+                <li class="hide-list__item">
+                  <a href="#" class="hide-list__link">О сайте</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <form action="">
+          <input type="search" placeholder="Найти аниме по названию" class="header__search header-search">
+        </form>
+        <div class="header__filter">Фильтр аниме</div>
+      </div>
+    </header>
+    <section class="basic">
+      <div class="container">
+        <div class="my-slider basic__slider">
+          <div class="main-title">Аниме весеннего сезона</div>
+          <div class="my-slider__visible">
+          </div>
+          <div class="my-slider__arrows">
+            <span class="my-slider__arrow-right">
+              <i class="arrow"></i>
+            </span>
+            <span class="my-slider__arrow-left">
+              <i class="arrow"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="container basic__container">
+        <div class="basic__update">
+          <div class="main-title">
+            Обновление аниме
+            <a href="#" class="basic__all">Все oбновление</a>
+          </div>
+          <ul class="basic__list">
+          </ul>
+        </div>
+        <div class="basic__news">
+          <div class="main-title">
+            Новости
+            <a href="#" class="basic__all">Все новости</a>
+          </div>
+          <ul class="basic__news-list"></ul>
+          <div class="basic__preview">
+            <div class="main-title">
+              Анонсы
+              <a href="#" class="basic__all">Все анонсы</a>
+            </div>
+            <ul class="basic__preview-list"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="content">
+      <div class="content__container container">
+        <div class="content__anime new-anime">
+          <div class="new-anime__main-title main-title">
+            <a href="#" class="new-anime__label">Новое на сайте</a>
+          </div>
+          <div class="new-anime__container"></div>
+        </div>
+        <div class="content__filter filter">
+          <div class="main-title">Фильтр аниме
+            <b class="filter__close">&times;</b>
+          </div>
+          <form class="filter__container">
+            <div class="filter__item">
+              <label class="filter__name" for="">Выбрать жанры</label>
+              <div class="filter__genres-add"></div>
+            </div>
+            <div class="filter__item">
+              <label class="filter__name" for="">Тип аниме</label>
+              <div class="filter__type"></div>
+            </div>
+            <div class="filter__item">
+              <label class="filter__name" for="">Статус аниме</label>
+              <div class="filter__status"></div>
+            </div>
+            <div class="filter__item">
+              <label class="filter__name" for="">Год</label>
+              <input class="filter__year" placeholder="от" type="number">
+              <input class="filter__year" placeholder="до" type="number">
+            </div>
+            <div class="filter__item">
+              <label class="filter__name" for="">Возрастной рейтинг</label>
+              <div class="filter__age-rating"></div>
+            </div>
+            <div class="filter__item">
+              <label class="filter__name" for="">Сортировать по</label>
+              <div class="filter__sort"></div>
+            </div>
+            <input class="filter__submit" type="submit" value="искать">
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="/app.5bd27738.js"></script>
+  </body>
+</html>

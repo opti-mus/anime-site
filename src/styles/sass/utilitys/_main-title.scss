@@ -1,0 +1,17 @@
+.main-title {
+  background-color: $main-black;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem 0;
+  color: $main-white;
+  position: relative;
+  border-bottom: 0.2rem solid $main-red;
+  @media screen and(max-width: $lg-mobile-bp) {
+    text-align: left;
+    padding-left: 1em;
+    font-size: 0.8em;
+    &.new-anime__main-title {
+      padding: 0;
+    }
+  }
+}
